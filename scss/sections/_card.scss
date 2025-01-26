@@ -1,0 +1,111 @@
+@use '../custom' as *;
+
+
+.card {
+  border: none;
+}
+
+.toggle-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 220px; // Width of the entire toggle
+  height: 50px; // Height of the toggle
+  background-color: #f0f0f0; // Light gray background
+  border-radius: 25px;
+  overflow: hidden;
+
+  // Hide the radio inputs
+  .toggle-input {
+    display: none;
+  }
+
+  // Style for Labels (Monthly and Annually buttons)
+  .toggle-label {
+    flex: 1;
+    text-align: center;
+    line-height: 50px; // Vertically center text
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555; // Default text color
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #3d5afe; // Hover effect for inactive buttons
+    }
+  }
+
+  // Active button text color
+  .toggle-input:checked + .toggle-label {
+    color: #fff; // White text for the active button
+    z-index: 2; // Keep text above the slider
+  }
+
+  // Move slider to "Annually" when it's selected
+  .toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; // Slider covers half the toggle width
+    height: 100%; // Full height of the toggle
+    background-color: #3d5afe; // Blue background
+    border-radius: 25px;
+    transition: transform 0.4s ease; // Smooth slide effect
+  }
+
+  // When "Annually" is checked, move the slider
+  #annually:checked ~ .toggle-slider {
+    transform: translateX(100%);
+  }
+
+  // Background color handling for the buttons
+  #monthly:checked ~ .toggle-slider {
+    background-color: #3d5afe; // Blue background when Monthly is selected
+  }
+
+  #annually:checked ~ .toggle-slider {
+    background-color: #3d5afe; // Blue background when Annually is selected
+  }
+}
+
+
+.card-body{
+  background: linear-gradient(to top, rgba($gray-300, 0.34), rgba($white, 0.95));
+  width: 100%;
+}
+
+.card-title{
+  font-size: 5rem;
+  font-weight: 700;
+  
+  span{
+    font-size: 1.3rem;
+    color: $gray-400;
+    font-weight: 500;
+    padding-bottom: 1.1rem;
+    padding-top: 1.2rem;
+  }
+}
+
+.card-text{
+  font-size: 2.3rem;
+  font-weight: 600;
+  
+  span{
+    font-size: 1.1rem;
+    color: $gray-400;
+    font-weight: 500;
+    padding-bottom: 1.1rem;
+    padding-top: 1.2rem;
+  }
+}
+
+.card-li{
+  li{
+    font-size: 1.4rem;
+    color: $gray-400;
+    font-weight: 500;
+    border-bottom: none;
+  }
+}

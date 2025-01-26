@@ -1,0 +1,151 @@
+@use '../custom' as *;
+
+
+footer{
+  margin-top: 6rem;
+  position: relative;
+  z-index: 1;
+  .footers{
+    background-color: $footer !important;
+    position: relative;
+        .row {
+      padding-top: 8rem;
+    }
+  
+    p {
+      padding-top: 2.5rem;
+      font-size: 1.3rem;
+  
+      a {
+        font-size: 1.3rem;
+        color: $white;
+        text-decoration: none;
+        padding-left: 1rem;
+  
+        &:hover {
+          color: $primary;
+          transform: scale(1.25);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  
+    &--icons {
+      padding-top: 1.1rem;
+  
+      i {
+        font-size: 1.8rem;
+        padding-left: 1.4rem;
+  
+        &:hover {
+          color: $white;
+          transform: scale(1.25);
+          rotate: 15deg;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+  }
+  &--image{
+    z-index: 2;
+    position: absolute;
+    left: 39rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .footer {
+//     .row {
+//       padding-top: 8rem;
+//     }
+  
+//     p {
+//       padding-top: 2.5rem;
+//       font-size: 1.3rem;
+  
+//       a {
+//         font-size: 1.3rem;
+//         color: $white;
+//         text-decoration: none;
+//         padding-left: 1rem;
+  
+//         &:hover {
+//           color: $primary;
+//           transform: scale(1.25);
+//           transition: all 0.3s ease;
+//         }
+//       }
+//     }
+  
+//     &--icons {
+//       padding-top: 1.1rem;
+  
+//       i {
+//         font-size: 1.8rem;
+//         padding-left: 1.4rem;
+  
+//         &:hover {
+//           color: $white;
+//           transform: scale(1.25);
+//           rotate: 15deg;
+//           transition: all 0.3s ease;
+//         }
+//       }
+//     }
+  
+//     &--boxes {
+//       position: absolute;
+//       bottom: 22rem;
+//       right: 3rem;
+//     }
+//   }
+  
+//   .footers {
+//     background-color: $footer; // Footer background color
+//     position: relative;
+//     z-index: 1; // Footer stays below the image
+//     padding: 2rem 0; // Add padding for spacing
+//     .img {
+//       position: absolute; // Allows stacking with z-index
+//       z-index: 2; // Ensures it stays above the footer
+//       bottom: 17rem;
+//       right: 2.4rem;
+//       max-width: 100%; // Maintain responsive size
+//       height: auto; // Keep aspect ratio
+//     }
+//   }
+  
+  
+// // Adjust negative margin to overlap the footer
+
+  
+  
+//   // @media (max-width: 768px) {
+//   //   .down {
+//   //     text-align: center;
+//   //    padding-bottom: 0.6rem;
+//   //   }
+//   //   .footer .row {
+//   //     flex-direction: column; // Stack items for mobile view
+//   //   }
+  
+//   //   .footer .intors {
+//   //     text-align: center; // Center-align for better visuals
+//   //   }
+//   // }
+
+
+  

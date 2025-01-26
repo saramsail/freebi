@@ -1,0 +1,36 @@
+@use '../custom' as *;
+
+.menu{
+    background-color: $white !important;
+    padding-top: 2rem;
+
+    li{
+        padding-right: 1.8rem;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: "Roboto" sans-serif;
+        a {
+            position: relative; // Required for pseudo-elements  
+            &::before {
+              content: '';
+              position: absolute;
+              width: 0; // Start with no width
+              height: 2px; // Line thickness
+              bottom: 0; // Position below text
+              left: 0; // Start from the left
+              background-color: $primary; // Line color
+              transition: width 0.3s ease; // Smooth transition for width
+            }
+      
+            &:hover {
+              color: $primary; // Change text color on hover
+              transform: scale(1.05);
+      
+              &::before {
+                width: 100%; // Expand line to full width on hover
+                transform: scale(1.05);
+               }
+            }
+        }
+    }
+}

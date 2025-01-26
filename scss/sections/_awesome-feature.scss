@@ -1,0 +1,61 @@
+@use '../custom' as *;
+
+
+.smart{
+    padding-bottom: 2rem;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1rem 0;
+    &--pic{
+        justify-content: start;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    &--details{
+        h1{
+            color: #f55767;
+            font-size: 1.5rem;
+        }
+    }
+    &--detailes{
+        h1{
+            color: #2563ff;
+            font-size: 1.5rem;
+        }
+    }
+    &--detail{
+        h1{
+            color: #40975f;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.display-2{
+    vertical-align: top;
+    font-family: "Poppins", sans-serif;
+    margin-top: 3rem;
+    &--intor{
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    &--description{
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+    }
+}
+
+
+.border-right{
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
+
+
+

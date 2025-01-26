@@ -1,0 +1,24 @@
+
+
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.companies {
+    margin-top: 5rem;
+    padding: 0 0 5rem 0;
+    &__logo-box {
+        // padding-left: 10rem;
+        max-width: 100%;
+        height: 5rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        text-align: center;
+        img {
+            height: 100%;
+            &:hover {
+                filter: grayscale(120);
+                transform: scale(1.25);
+            }
+        }
+    }
+}

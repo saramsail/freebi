@@ -1,0 +1,24 @@
+@use '../custom' as *;
+
+
+
+.whychooes{
+    padding-bottom: 2rem;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1rem 0;
+    padding-top: 4rem;
+    &--pic{
+        justify-content: start;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    &--detaile{
+        h1{
+            color: $black;
+            font-size: 1.5rem;
+        }
+    }
+}

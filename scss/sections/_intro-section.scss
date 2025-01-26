@@ -1,0 +1,55 @@
+@use '../custom' as *;
+
+
+.intro-section {
+    background: url('../../images/intro-section/intro.png') no-repeat center center; // Centers the image
+    background-size: cover; // Ensures the image covers the entire section
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    min-height: 100vh; // Ensures the section fills the viewport height
+    position: relative; // Makes it easier to layer foreground content over the background
+}
+
+
+.display-2{
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    &--intor{
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 3.5rem;
+    }
+    &--description{
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+    }
+}
+
+.circle{
+    background-color: orange;
+    width: 2.3rem;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    height: 2rem;
+    padding-top: 0.2rem;
+    
+    i{
+        color: $white;
+    }
+}
+
+.text{
+    background-color: $gray-400;
+    position: absolute;
+    width: 22rem;
+    padding-left: 2.8rem;
+    height: 2rem;
+    padding-top: 0.2rem;
+    
+}

@@ -1,0 +1,134 @@
+@use '../custom' as *;
+
+
+.testimonial{
+    margin-bottom: 5rem;
+    &--icons{
+        font-size: 1.5rem;
+        color: yellow;
+        padding-bottom: 1.4rem;
+    }
+    h2{
+        font-weight: 700;
+    }
+    p{
+        font-weight: 300;
+    }
+    &--details{
+        vertical-align: center;
+        padding-top: 0.8rem;
+        padding-left: 1.5rem;
+        h3{
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+    }
+
+    &--button{
+        
+        .btn{
+            border-radius: 50%;
+            padding: 0.7rem;
+            background-color: $gray-100;
+            border-color: $gray-200;
+            color: $gray-500;
+            &:hover{
+                color: $primary;
+                background-color: $gray-300;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+// .testimonial--button {
+//     position: absolute;
+//     top: 50%;
+//     right: 0;
+//     transform: translateY(-50%); // Center vertically
+  
+//     .custom-btn {
+//       border-radius: 50%;
+//       padding: 0.8rem;
+//       color: $gray-400;
+//       border-color: $gray-400;
+//       font-size: 1.5rem; // Button size
+//       background-color: transparent; // Transparent background
+//       transition: all 0.3s ease; // Smooth hover transition
+  
+//       &:hover {
+//         background-color: yellow; // Hover effect
+//         color: #fff;
+//         border-color: yellow;
+//       }
+//     }
+//   }
+  
+
+
+// .text-center {
+//     .btn {
+//     &:hover {
+//       &.fa-long-arrow-alt-left {
+//         color: $secondary; // Left arrow ka color hover pe $secondary ho jayega
+//       }
+  
+//       &.fa-long-arrow-alt-right {
+//         color:  $secondary; // Right arrow ka color hover pe $secondary ho jayega
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+// // Variables
+// $btn-size: 3rem;
+// $btn-bg-color: #fff;
+// $btn-border-color: #ddd;
+// $btn-hover-bg-color: yellow;
+// $btn-hover-border-color: yellow;
+// $icon-color: #000;
+// $icon-hover-color: #333;
+
+// // Mixin for button styling
+// @mixin custom-btn-style {
+//   width: $btn-size;
+//   height: $btn-size;
+//   background-color: $btn-bg-color;
+//   border-radius: 50%;
+//   border: 2px solid $btn-border-color;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: $icon-color;
+//   font-size: 1.25rem;
+//   transition: all 0.3s ease;
+//   margin: 0 0.5rem;
+
+//   &:hover {
+//     background-color: $btn-hover-bg-color;
+//     border-color: $btn-hover-border-color;
+//     color: $icon-hover-color;
+//   }
+// }
+
+// // Apply styles to custom buttons
+// .custom-btn {
+//   @include custom-btn-style;
+// }
+
+// // Align the controls to the right
+// .custom-controls {
+//   position: absolute;
+//   top: -50%;
+//   right: 10px;
+//   transform: translateY(-50%);
+// }
+
